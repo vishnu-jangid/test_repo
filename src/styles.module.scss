@@ -1,0 +1,104 @@
+.container {
+    display: flex;
+    flex-direction: column;
+
+    &__block {
+        display: flex;
+        flex-direction: row;
+        align-items: left;
+        justify-content: space-between;
+        background-color: #19886b;
+        padding: 1rem;
+        color: #faf4e4;
+    }
+
+    &__searchcontainer {
+        display: flex;
+        border: 2px solid #faf4e4;
+        border-radius: 10px;
+        padding: 0.25rem;
+    }
+
+    &__input {
+        border: 0;
+        font-size: 1rem;
+        outline: none;
+        background-color: transparent;
+        text-overflow: ellipsis;
+        max-width: 35rem;
+        color: #faf4e4;
+    }
+    
+
+    &__icon {
+        height: 2rem;
+        width: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        &:hover {
+            color: #d1e7e1;
+        }
+    }
+
+    &__list {
+        display: flex;
+        gap: 2rem;
+        padding: 1rem;
+        font-size: 0.8rem;
+    }
+
+    &___listitem {
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        @media screen and (max-width: 800px) {
+            width: 100%;
+          }
+    }
+
+    &__totalresults {
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+
+    &__loading {
+        height: 50vh;
+        top: 25%;
+        left: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__pagination {
+        gap: 2rem;
+        padding: 1rem;
+        font-size: 0.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__bottomicon {
+        display: flex;
+        align-items: center;
+        font-size: 1.25rem;
+        padding: 0.25rem;
+        color: #19886b;
+        cursor: pointer;
+
+        &:hover {
+        border-radius: 10px;
+        padding: 0.25rem;
+        border: 1px solid #19886b;
+        }
+    }
+    ::placeholder {
+        color: #faf4e4;
+    }
+}
